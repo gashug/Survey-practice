@@ -8,17 +8,56 @@
 </head>
 <body>
     <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p>Thank you for taking the time to help us improve the platform</p>
-    <form id="survey-form" action="">
-      <label for="name">
-        <input id="name" type="text" placeholder="your full name">
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+    <fieldset>
+      <label>Name <input id="name" type="text" placeholder="Name"></label>
+      <label>Email <input id="email" type="email" placeholder="Enter your Email"></label>
+      <label>Age(optional) <input id="age" type="number" min="13" max="120" placeholder="Enter your Age"></label>
+    </fieldset>
+    <fieldset>
+      <label>Which option best describes your current role?
+      <select>
+        <option value="">Select current role</option>
+        <option value="1">Student</option>
+        <option value="2">Full Time Job</option>
+        <option value="3">Full Time Learner</option>
+        <option value="4">Prefer not to say</option>
+        <option value="5">other</option>
+      </select>
       </label>
-      <label for="email">
-        <input type="email" name="" id="email" placeholder="your email">
+      <label>Would you recommend freeCodeCamp to a friend?
+        <label><input type="radio" name="recommendation" /> Definitely</label>
+        <label><input type="radio" name="recommendation"> Maybe</label>
+        <label><input type="radio" name="recommendation"> Not sure</label>
       </label>
-      <label for="number">
-        <input type="number" name="" id="number" placeholder="number">
+      <label>What is your favorite feature of freeCodeCamp?
+      <select>
+        <option value="">Select an option</option>
+        <option value="1">Challenges</option>
+        <option value="2">Projects</option>
+        <option value="3">Community</option>
+        <option value="4">Open Source</option>
+      </select>
       </label>
+    </fieldset>
+    <fieldset>
+      <label>What would you like to see improved? (Check all that apply)
+        <label><input type="checkbox" />Front-end Projects</label>
+        <label><input type="checkbox" />Back-end Projects</label>
+        <label><input type="checkbox" />Data Visualization</label>
+        <label><input type="checkbox" />Challenges</label>
+        <label><input type="checkbox" />Open Source Community</label>
+        <label><input type="checkbox" />Gitter help rooms</label>
+        <label><input type="checkbox" />Videos</label>
+        <label><input type="checkbox" />City Meetups</label>
+        <label><input type="checkbox" />Wiki</label>
+        <label><input type="checkbox" />Forum</label>
+<label><input type="checkbox" />Additional Courses</label>
+      </label>
+      <label>Any comments or suggestions?<textarea rows="3" cols="30" placeholder="Enter your comment here..."></textarea></label>
+    </fieldset>
+    <input type="submit" value="Submit" />
     </form>
 </body>
 </html>
