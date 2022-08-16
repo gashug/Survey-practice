@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgb(38, 57, 85);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 0 40px;
+}
+
+#title{
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#description{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#survey-form{
+    margin: 0px auto;
+    max-width: 800px;
+    padding: 30px;
+    background-color: rgb(22, 35, 54);
+}
+
+fieldset{
+    border: none;
+    margin: 20px 0px;
+    padding: 20px 0px;
+    border: none;
+}
+
+#details label{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    /* margin-bottom: 15px; */
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+input::placeholder{
+    font-size: 16px;
+}
+#discription{
+    font-size: 20px;
+    display: block;
+}
+#discription select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#recommendation{
+    display: block;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+}
+#recommendation label{
+    margin-bottom: 10px;
+}
+#addition-com{
+    display: block;
+}
